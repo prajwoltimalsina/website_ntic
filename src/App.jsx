@@ -44,7 +44,7 @@ const Navigation = () => {
             </div>
             <div className="flex flex-col">
               <span className={`font-bold text-lg leading-tight ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-                NRIC
+                NTIC
               </span>
               <span className={`text-xs ${isScrolled ? 'text-gray-600' : 'text-gray-200'}`}>
                 Research & Innovation
