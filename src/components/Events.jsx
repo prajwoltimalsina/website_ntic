@@ -50,11 +50,11 @@ const Events = () => {
   ];
 
   const handleRegister = () => {
-    alert('This feature is coming soon!');
+    alert('This update is coming soon!');
   };
 
   const handleReadMore = () => {
-    alert('This feature is coming soon!');
+    alert('This update is coming soon!');
   };
 
   return (
