@@ -405,6 +405,7 @@
 // };
 
 // export default Team;
+
 import React from "react";
 
 const Team = () => {
@@ -523,13 +524,18 @@ const Team = () => {
                 </h3>
                 <p className="text-blue-600 font-semibold mt-2">{member.role}</p>
                 <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
-                >
-                  LinkedIn Profile
-                </a>
+  href={member.linkedin}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block mt-4 w-full  text-white py-2 rounded-lg hover:bg-blue-700 transition flex items-center justify-center gap-2"
+>
+  <img 
+    src="/team/linkedin.png"   // <-- your imported logo in public/team
+    alt="LinkedIn"
+    className="w-6 h-6"        // size of the logo
+  />
+</a>
+
               </div>
             </div>
           ))}
@@ -558,14 +564,19 @@ const Team = () => {
                   {member.name}
                 </h3>
                 <p className="text-blue-600 font-semibold mt-2">{member.role}</p>
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
-                >
-                  LinkedIn Profile
-                </a>
+               <a
+  href={member.linkedin}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block mt-4 w-full  text-white py-2 rounded-lg hover:bg-blue-700 transition flex items-center justify-center gap-2"
+>
+  <img 
+    src="/team/linkedin.png"   // <-- your imported logo in public/team
+    alt="LinkedIn"
+    className="w-6 h-6"        // size of the logo
+  />
+</a>
+
               </div>
             </div>
           ))}

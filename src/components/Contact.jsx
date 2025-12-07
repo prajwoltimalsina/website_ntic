@@ -11,17 +11,17 @@ const Contact = () => {
   const contactInfo = [
     {
       title: 'Email',
-      details: 'info@nric.org',
-      link: 'mailto:info@nric.org'
+      details: 'ntic@ku.edu.np',
+      link: 'ntic@ku.edu.np'
     },
     {
       title: 'Phone',
-      details: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      details: '',
+      link: 't'
     },
     {
       title: 'Address',
-      details: '123 Innovation Drive, Research Park, CA 94025',
+      details: 'Dhulikehel, Kathmandu, Nepal',
       link: '#'
     }
   ];
@@ -172,7 +172,7 @@ const Contact = () => {
               <img 
                 alt="Research center location on map" 
                 className="w-full h-full object-cover"
-               src="https://images.unsplash.com/photo-1613375058973-ad78f6512f38" />
+               src="public/team/KU_building.jpg" />
             </div>
           </div>
         </div>
