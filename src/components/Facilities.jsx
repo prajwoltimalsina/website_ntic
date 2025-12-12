@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Facilities = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   const facilities = [
     {
       title: 'Advanced Microscopy Lab',
@@ -42,7 +48,7 @@ const Facilities = () => {
     <section id="facilities" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Facilities & Labs</span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">
             State-of-the-Art Research Facilities
@@ -55,10 +61,12 @@ const Facilities = () => {
 
         {/* Facilities Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {facilities.map((facility) => (
+          {facilities.map((facility, index) => (
             <div
               key={facility.title}
               className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               {/* Image */}
               <div className="relative h-48 overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50">
@@ -92,7 +100,10 @@ const Facilities = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-8 md:p-12 text-center text-white">
+        <div 
+          className="mt-16 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-8 md:p-12 text-center text-white"
+          data-aos="zoom-in"
+        >
           <h3 className="text-3xl font-bold mb-4">Need Access to Our Facilities?</h3>
           <p className="text-xl text-blue-100 mb-6 max-w-2xl mx-auto">
             We offer facility access programs for researchers, students, and industry partners. 

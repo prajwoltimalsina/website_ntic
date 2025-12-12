@@ -111,15 +111,15 @@ const Team = () => {
       <div className="p-6 text-center">
         <h3 className="text-xl md:text-2xl font-bold text-gray-900">{member.name}</h3>
         <p className="text-blue-600 font-semibold mt-2">{member.role}</p>
-        <a
-          href={member.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-flex items-center justify-center gap-2   text-white font-medium py-2 px-4 rounded-lg transition-all duration-300"
-        >
-          <img src="/team/linkedin.png" alt="LinkedIn" className="w-6 h-6" />
-          LinkedIn
-        </a>
+      <a
+  href={member.linkedin}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 mx-auto flex items-center justify-center"
+>
+  <img src="/team/linkedin.png" alt="LinkedIn" className="w-8 h-8" />
+</a>
+
       </div>
     </div>
   );

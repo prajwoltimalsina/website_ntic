@@ -179,3 +179,156 @@ const About = () => {
 };
 
 export default About;
+
+
+
+
+// import React, { useState, useEffect } from "react";
+// import { useLocation } from "react-router-dom";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+
+// const About = () => {
+//   const location = useLocation();
+//   const isAboutPage = location.pathname === "/about";
+
+//   const galleryImages = [
+//     "/team/carousel10.jpg",
+//     "/team/pmvisit.jpg",
+//     "/team/koicavisit.jpg",
+//     "/team/icimod.jpg",
+//     "/team/french.jpeg",
+//     "/team/gates.jpeg",
+//   ];
+
+//   const [currentImage, setCurrentImage] = useState(0);
+
+//   useEffect(() => {
+//     AOS.init({ duration: 800, easing: "ease-in-out", once: true });
+
+//     const interval = setInterval(() => {
+//       setCurrentImage((prev) => (prev + 1) % galleryImages.length);
+//     }, 4000);
+
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   return (
+//     <section id="about" className="py-24 bg-gray-50">
+
+//       {/* PAGE HEADER */}
+//       <div className="text-center mb-16" data-aos="fade-up">
+//         <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">
+//           About Us
+//         </span>
+//         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">
+//           Pioneering Research & Innovation
+//         </h2>
+//         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+//           {/* Placeholder text — replace with actual intro */}
+//           The Nepal Technology Innovation Center (NTIC) drives impactful research
+//           and innovation that uplift communities and strengthen Nepal’s research ecosystem.
+//         </p>
+//       </div>
+
+//       {/* WHO WE ARE */}
+//       <section className="max-w-5xl mx-auto px-6 py-12 bg-white rounded-xl shadow-lg mb-16" data-aos="fade-right">
+//         <h3 className="text-3xl font-bold text-gray-900 mb-6">Who We Are</h3>
+//         <p className="text-gray-700 leading-relaxed">
+//           {/* Replace with your content from Google Doc */}
+//           NTIC is a collaborative research and innovation center established to bridge science, technology,
+//           and community development. Our mission is to support sustainable innovation solutions for Nepal.
+//         </p>
+//       </section>
+
+//       {/* MISSION & VISION */}
+//       <section className="max-w-5xl mx-auto px-6 py-12 bg-gray-50 rounded-xl shadow-lg mb-16" data-aos="fade-left">
+//         <h3 className="text-3xl font-bold text-gray-900 mb-6">Mission & Vision</h3>
+
+//         <div className="space-y-6">
+//           <div>
+//             <h4 className="text-xl font-semibold text-blue-600">Our Mission</h4>
+//             <p className="text-gray-700 leading-relaxed">
+//               {/* Replace with your document text */}
+//               To foster interdisciplinary research and innovation that leads to
+//               sustainable technological solutions in agriculture, energy, and health.
+//             </p>
+//           </div>
+
+//           <div>
+//             <h4 className="text-xl font-semibold text-blue-600">Our Vision</h4>
+//             <p className="text-gray-700 leading-relaxed">
+//               {/* Replace with your document text */}
+//               To become Nepal’s leading hub for innovation and research excellence,
+//               nationally and globally.
+//             </p>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* OUR HISTORY & COLLABORATION */}
+//       <section className="max-w-5xl mx-auto px-6 py-12 bg-white rounded-xl shadow-lg mb-16" data-aos="fade-up">
+//         <h3 className="text-3xl font-bold text-gray-900 mb-6">Our History & Collaboration</h3>
+//         <p className="text-gray-700 leading-relaxed">
+//           {/* Replace placeholder */}
+//           NTIC was formally established with support from the Government of Nepal and
+//           the Government of Korea through KOICA. Its inception has strengthened
+//           research capacity nationwide through strategic partnerships. :contentReference[oaicite:0]{index=0}
+//         </p>
+//       </section>
+
+//       {/* ADVISORY TEAM */}
+//       <section className="max-w-5xl mx-auto px-6 py-12 bg-gray-50 rounded-xl shadow-lg mb-16" data-aos="fade-right">
+//         <h3 className="text-3xl font-bold text-gray-900 mb-6">Advisory Team</h3>
+//         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+//           {/* Add actual team members */}
+//           <div className="text-center">
+//             <img src="/team/advisor1.jpg" alt="Advisor" className="mx-auto rounded-full w-32 h-32 mb-4" />
+//             <h4 className="font-semibold text-lg">Advisor Name</h4>
+//             <p className="text-gray-600">Role / Field</p>
+//           </div>
+//           {/* Repeat as needed */}
+//         </div>
+//       </section>
+
+//       {/* TEAM */}
+//       <section className="max-w-5xl mx-auto px-6 py-12 bg-white rounded-xl shadow-lg mb-16" data-aos="fade-left">
+//         <h3 className="text-3xl font-bold text-gray-900 mb-6">Team Members</h3>
+//         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+//           {/* Replace with real team */}
+//           <div className="text-center">
+//             <img src="/team/member1.jpg" alt="Team Member" className="mx-auto rounded-full w-32 h-32 mb-4" />
+//             <h4 className="font-semibold text-lg">Team Member</h4>
+//             <p className="text-gray-600">Designation</p>
+//           </div>
+//           {/* Repeat */}
+//         </div>
+//       </section>
+
+//       {/* GALLERY CAROUSEL */}
+//       <div className="text-center mb-12" data-aos="fade-up">
+//         <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Gallery</h3>
+//       </div>
+
+//       <div className="relative mx-auto max-w-4xl" data-aos="fade-up">
+//         <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-r from-blue-50 to-blue-100 p-4">
+//           <div className="relative w-full h-96 rounded-2xl overflow-hidden">
+//             <img
+//               key={currentImage}
+//               src={galleryImages[currentImage]}
+//               alt={`Gallery ${currentImage + 1}`}
+//               className="w-full h-full object-cover transition-opacity duration-1000"
+//             />
+
+//             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white text-sm px-4 py-2 rounded-full">
+//               {`Image ${currentImage + 1} of ${galleryImages.length}`}
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+
+//     </section>
+//   );
+// };
+
+// export default About;

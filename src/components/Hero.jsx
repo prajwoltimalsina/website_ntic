@@ -130,11 +130,11 @@ const Hero = () => {
         <div className="lg:w-1/2 space-y-6" data-aos="fade-right">
           <span className="inline-flex items-center bg-white rounded-full px-4 py-1 shadow text-sm font-medium text-gray-700 mb-2">
             <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
-            National Research & Innovation Center
+            Research & Innovation 
           </span>
 
           <h1 className="text-5xl sm:text-6xl font-extrabold text-gray-900 leading-tight">
-            National <span className="text-blue-600">Research and </span> Innovation Center
+            Nepal <span className="text-blue-600">Technology and</span> Research Center
           </h1>
 
           <p className="text-gray-700 text-lg sm:text-xl max-w-xl">
@@ -174,9 +174,9 @@ const Hero = () => {
               alt="Clinical Internship 2"
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-2 left-2 bg-white rounded-lg px-3 py-1 text-sm font-semibold shadow">
+            {/* <div className="absolute top-2 left-2 bg-white rounded-lg px-3 py-1 text-sm font-semibold shadow">
               98% Success Rate
-            </div>
+            </div> */}
           </div>
 
           <div className="relative rounded-xl overflow-hidden shadow-lg">
@@ -185,16 +185,7 @@ const Hero = () => {
               alt="Clinical Internship 3"
               className="w-full h-full object-cover"
             />
-            <div className="absolute bottom-2 left-2 bg-white rounded-lg px-3 py-2 text-sm shadow flex items-center gap-2">
-              <div className="flex -space-x-2">
-                <img src="/team/student1.jpg" alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-                <img src="/team/student2.jpg" alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-                <img src="/team/student3.jpg" alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-              </div>
-              <span className="text-xs font-medium text-gray-700">
-                100+ Students
-              </span>
-            </div>
+           
           </div>
 
           <div className="relative rounded-xl overflow-hidden shadow-lg">
